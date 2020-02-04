@@ -1,0 +1,25 @@
+.footer_bg {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1680px;
+  margin: 0 auto;
+  height: 150px;
+  align-items: center;
+  background-color: silver;
+}
+
+.disignet {
+  margin-left: 10px;
+}
+
+.social_button {
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 375px) {
+  .footer_bg {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+  }
+}
