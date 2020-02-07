@@ -25,33 +25,37 @@ function showMovie(jsonObj) {
 
   for (let i = 0; i < movie.length; i++) {
     const myArticle = document.createElement("div");
-    const myH2 = document.createElement("h2");
-    const myPara1 = document.createElement("p");
-    const myPara2 = document.createElement("div");
-    const myPara4 = document.createElement("div");
-    // const myPara5 = document.createElement("img");
-    const myPara3 = document.createElement("img");
+    myArticle.classList.add("movie_box");
 
-    myH2.textContent = movie[i].name;
+    const myPara1 = document.createElement("p");
+    myPara1.classList.add("movie_title");
+    const myPara2 = document.createElement("div");
+    myPara2.classList.add("movie_rat");
+    const myPara4 = document.createElement("div");
+    myPara4.classList.add("movie_genre");
+    const myPara5 = document.createElement("img");
+    // const myPara3 = document.createElement("img");
+    myPara5.classList.add("movie_img");
+
     myPara1.textContent = movie[i].title;
     myPara2.textContent = movie[i].rating;
-    myPara4.textContent = movie[i].description;
-    // myPara5.img = movie[i].preview.hgh;
-    myPara3.getElementsByTagName = movie[i].preview;
+    myPara4.textContent = movie[i].genre;
+    myPara5.src =
+      "https://res.cloudinary.com/dx4wkpab8/image/upload/v1574199507/movies/bitmap_2x_qt5gqd.jpg";
+    // myPara3.createElement = movie[i].preview;
 
-    // let movieimg = movie[i].preview;
-    // for (let i = 0; i < movieimg.length; i++) {
-    //   const listItem = document.createElement("img");
-    //   listItem.img = movieimg[i];
-    //   myList.appendChild(listItem);
-    // }
+    let movieimg = movie[i].preview;
+    for (let j = 0; j < movieimg.length; j++) {
+      const listItem = document.createElement("img");
+      listItem.img = movieimg[j];
+      myList.appendChild(listItem);
+    }
 
-    myArticle.appendChild(myH2);
     myArticle.appendChild(myPara1);
     myArticle.appendChild(myPara2);
-    myArticle.appendChild(myPara3);
+    // myArticle.appendChild(myPara3);
     myArticle.appendChild(myPara4);
-    // myArticle.appendChild(myPara5);
+    myArticle.appendChild(myPara5);
 
     section.appendChild(myArticle);
   }

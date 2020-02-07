@@ -44,6 +44,7 @@
   background-color: #ff0079;
   border: none;
   color: #ffffff;
+  cursor: pointer;
 }
 
 .view {
@@ -53,6 +54,7 @@
   border-radius: 5px;
   border: solid 1px #ffffff;
   color: white;
+  cursor: pointer;
 }
 
 .wishlist {
@@ -61,6 +63,7 @@
   background-color: rgba(255, 255, 255, 0);
   border: none;
   color: white;
+  cursor: pointer;
 }
 
 .movie_information {
@@ -103,7 +106,7 @@
   justify-content: center;
 }
 
-@media screen and (max-width: 375px) {
+@media (max-width: 375px) {
   .header {
     margin: 0 auto;
   }
@@ -154,6 +157,7 @@
     padding-left: 10px;
     width: 100%;
     display: flex;
+    cursor: pointer;
   }
 
   .watch {
@@ -172,6 +176,7 @@
     border-radius: 5px;
     border: solid 1px #ffffff;
     color: white;
+    margin-left: 5px;
   }
 
   .wishlist {
@@ -180,6 +185,7 @@
     background-color: rgba(255, 255, 255, 0);
     border: none;
     color: white;
+    margin-left: 5px;
   }
 
   .movie_rating {

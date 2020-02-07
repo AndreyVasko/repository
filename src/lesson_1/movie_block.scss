@@ -1,6 +1,103 @@
 .main_block {
-  width: 100%;
-  height: 601px;
+  max-width: 1680px;
+  display: flex;
+  position: relative;
   background-color: silver;
-  border: 1px solid red;
+  margin: 20px 0px;
+}
+
+.movie_img {
+  width: 100%;
+  display: block;
+}
+
+.movie_box {
+  width: 33.3%;
+  margin: 20px;
+  padding: 5px;
+  border: 2px solid grey;
+  box-shadow: 5px 5px 5px white;
+  position: relative;
+}
+
+.movie_title {
+  width: 100%;
+  position: absolute;
+  bottom: 50px;
+  color: white;
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+.movie_genre {
+  width: 400px;
+  display: block;
+  position: absolute;
+  bottom: 15px;
+  left: 20px;
+  color: #babbc3;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+.movie_rat {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  border: 1px solid white;
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  color: #ff0079;
+}
+
+@media (max-width: 375px) {
+  .main_block {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: silver;
+    margin: 20px 0px;
+  }
+
+  .movie_box {
+    width: 370px;
+    margin: 5px 0px;
+    padding: 5px;
+    border: 2px solid grey;
+    box-shadow: none;
+    position: relative;
+  }
+
+  .movie_title {
+    width: 100%;
+    position: absolute;
+    bottom: 65px;
+    color: white;
+    font-size: 19px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+  }
+
+  .movie_rat {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    border: 1px solid white;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    color: #ff0079;
+    padding: 5px;
+  }
+
+  .movie_genre {
+    width: 400px;
+    display: block;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: #babbc3;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+  }
 }

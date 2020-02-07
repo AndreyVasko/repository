@@ -29,7 +29,7 @@
 }
 
 .menu li a:hover {
-  background-color: orange;
+  background-color: #ff0079;
   border-radius: 5px;
 }
 
@@ -42,7 +42,7 @@
   margin-right: 100px;
 }
 
-@media screen and (max-width: 375px) {
+@media (max-width: 375px) {
   .toggle {
     clear: both;
     display: block;
@@ -51,11 +51,13 @@
     line-height: 40px;
     width: 100%;
     color: black;
-    background-color: chocolate;
+    background-color: #ff0079;
+    opacity: 0.4;
     transition: all 0.1s linear;
   }
   .toggle:hover {
-    background-color: cornflowerblue;
+    background-color: #ff0079;
+    opacity: 0.4;
   }
   #checkbox-menu:checked + label .touch li {
     opacity: 1;
@@ -90,9 +92,9 @@
   .menu li a.logo {
     font-size: 25px;
     margin-right: 0px;
-    color: black;
-    border: 1px solid red;
-    background-color: silver;
+    color: white;
+
+    background-color: none;
   }
 
   .menu li a.contacts {
